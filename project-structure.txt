@@ -1,0 +1,53 @@
+safe-harbor/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── safehabor/
+│   │   │           ├── SafeHarborApplication.java
+│   │   │           ├── controller/
+│   │   │           │   ├── ShipInfoController.java
+│   │   │           │   ├── SsaAssessmentController.java
+│   │   │           │   ├── InfractionController.java
+│   │   │           │   └── HarborHistoryController.java
+│   │   │           ├── model/
+│   │   │           │   ├── ShipInfo.java
+│   │   │           │   ├── SsaAssessment.java
+│   │   │           │   ├── Infraction.java
+│   │   │           │   └── HarborHistory.java
+│   │   │           ├── repository/
+│   │   │           │   ├── ShipInfoRepository.java
+│   │   │           │   ├── SsaAssessmentRepository.java
+│   │   │           │   ├── InfractionRepository.java
+│   │   │           │   └── HarborHistoryRepository.java
+│   │   │           ├── service/
+│   │   │           │   ├── ShipInfoService.java
+│   │   │           │   ├── SsaAssessmentService.java
+│   │   │           │   ├── InfractionService.java
+│   │   │           │   └── HarborHistoryService.java
+│   │   │           ├── dto/
+│   │   │           │   ├── ShipInfoDTO.java
+│   │   │           │   ├── SsaAssessmentDTO.java
+│   │   │           │   ├── InfractionDTO.java
+│   │   │           │   └── HarborHistoryDTO.java
+│   │   │           └── exception/
+│   │   │               ├── ResourceNotFoundException.java
+│   │   │               ├── GlobalExceptionHandler.java
+│   │   │               └── ErrorResponse.java
+│   │   └── resources/
+│   │       ├── application.properties
+│   │       ├── data.sql
+│   │       └── schema.sql
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── safehabor/
+│                   └── controller/
+│                       ├── ShipInfoControllerTest.java
+│                       ├── SsaAssessmentControllerTest.java
+│                       ├── InfractionControllerTest.java
+│                       └── HarborHistoryControllerTest.java
+└── pom.xml
+
+package com.example.SafeHarborAPI2.model;
+
