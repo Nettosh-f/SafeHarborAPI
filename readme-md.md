@@ -60,7 +60,8 @@ safe-harbor/
 │   │   │           ├── repository/                (Data access interfaces)
 │   │   │           ├── service/                   (Business logic)
 │   │   │           ├── dto/                       (Data Transfer Objects)
-│   │   │           └── exception/                 (Exception handling)
+│   │   │           ├── exception/                 (Exception handling)
+│   │   │           └── config/                    (Configuration classes)
 │   │   └── resources/
 │   │       ├── application.properties             (Application configuration)
 │   │       ├── data.sql                           (Sample data)
