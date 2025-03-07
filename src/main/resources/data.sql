@@ -7,6 +7,18 @@ VALUES
 ('Mediterranean Queen', 'Greece', 'Cruise Ship', 'Athens', 'Greek, English, French', 33344455, 'IJKL012', 'Mediterranean Cruises SA', 'A1', 0.0, '2023-07-05', 'European Maritime Safety Agency', FALSE, 'ACTIVE'),
 ('Baltic Trader', 'Estonia', 'General Cargo', 'Tallinn', 'Estonian, Russian, English', 99900011, 'MNOP345', 'Baltic Trading Company', 'B1', 28500.2, '2022-12-12', 'Estonian Maritime Administration', FALSE, 'MAINTENANCE');
 
+-- Additional ship data
+INSERT INTO ship_info (ship_name, ship_flag, ship_type, port_of_registry, working_languages, official_registry_number, call_sign, ship_owner, class, cargo_capacity_tonnage, date_of_ssa, ssa_by, is_high_risk_crew, ship_status)
+VALUES
+('Arctic Voyager', 'Japan', 'General Cargo', 'Shanghai', 'Japanese', 60427372, 'QEDJUZ', 'Maritime Ventures', 'A1', 172321.12, '2023-02-10', 'Maritime Safety Authority', FALSE, 'ACTIVE'),
+('Neptune''s Pride', 'Italy', 'Oil Tanker', 'Tokyo', 'Chinese', 89045863, '12D3U1', 'Oceanic Holdings', 'A1+', 90898.02, '2023-02-18', 'International Maritime Organization', FALSE, 'ACTIVE'),
+('Titanic II', 'Spain', 'General Cargo', 'Shanghai', 'English', 46137557, '0A4OCG', 'Global Freight Corp.', 'B2', 193847.41, '2023-07-06', 'Maritime Safety Authority', FALSE, 'ACTIVE'),
+('Sea Phantom', 'Japan', 'Container Ship', 'Monrovia', 'Chinese', 46676731, '7CNQQI', 'Silver Line Shipping', 'B2', 112709.63, '2023-06-26', 'International Maritime Organization', TRUE, 'MAINTENANCE'),
+('Poseidon''s Wrath', 'France', 'General Cargo', 'New York', 'French', 15937181, 'YHDHNF', 'Oceanic Holdings', 'A1', 58020.46, '2023-06-21', 'Maritime Safety Authority', FALSE, 'UNDER_REVIEW'),
+('Black Pearl', 'Spain', 'Bulk Carrier', 'New York', 'Russian', 41227119, 'TYGOVZ', 'Silver Line Shipping', 'A1', 140652.39, '2023-04-01', 'International Maritime Organization', FALSE, 'MAINTENANCE'),
+('Solar Wind', 'Japan', 'Container Ship', 'Tokyo', 'English', 89855706, 'VA9V8B', 'Global Freight Corp.', 'A1', 91765.92, '2023-02-08', 'Maritime Safety Authority', TRUE, 'ACTIVE'),
+('Emerald Horizon', 'Italy', 'Oil Tanker', 'New York', 'Spanish', 91634536, 'HW0C1Z', 'Global Freight Corp.', 'C3', 193199.75, '2023-07-13', 'International Maritime Organization', TRUE, 'UNDER_REVIEW');
+
 -- Sample data for ssa_assessments table
 INSERT INTO ssa_assessments (file_id, ssa_type, ssa_score, ssa_comments, is_suspect)
 VALUES
