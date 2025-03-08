@@ -48,6 +48,30 @@ INSERT INTO ssa_assessments (file_id, ssa_type, ssa_score, ssa_comments, is_susp
 VALUES
 (5, 'physical_dmg', 50, 'Hull integrity issues reported in previous inspection', FALSE);
 
+INSERT INTO ssa_assessments (file_id, ssa_type, ssa_score, ssa_comments, is_suspect)
+VALUES (6, 'health', 55, 'Insufficient life saving equipment for passenger capacity', FALSE);
+
+INSERT INTO ssa_assessments (file_id, ssa_type, ssa_score, ssa_comments, is_suspect)
+VALUES (7, 'physical_dmg', 40, 'Minor structural damage to cargo hold bulkheads', FALSE);
+
+INSERT INTO ssa_assessments (file_id, ssa_type, ssa_score, ssa_comments, is_suspect)
+VALUES (8, 'cyber', 65, 'Outdated navigation and communication systems, vulnerable to cyber threats', TRUE);
+
+INSERT INTO ssa_assessments (file_id, ssa_type, ssa_score, ssa_comments, is_suspect)
+VALUES (9, 'violence', 35, 'Security protocols need updating, crew training recommended', FALSE);
+
+INSERT INTO ssa_assessments (file_id, ssa_type, ssa_score, ssa_comments, is_suspect)
+VALUES (10, 'other', 25, 'Minor compliance issues with international maritime regulations', FALSE);
+
+INSERT INTO ssa_assessments (file_id, ssa_type, ssa_score, ssa_comments, is_suspect)
+VALUES (11, 'illegal', 70, 'Previous cargo documentation inconsistencies require additional scrutiny', TRUE);
+
+INSERT INTO ssa_assessments (file_id, ssa_type, ssa_score, ssa_comments, is_suspect)
+VALUES (12, 'health', 45, 'Medical supplies inventory below required standards', FALSE);
+
+INSERT INTO ssa_assessments (file_id, ssa_type, ssa_score, ssa_comments, is_suspect)
+VALUES (13, 'physical_dmg', 60, 'Engine room maintenance issues, potential safety hazard', FALSE);
+
 -- Sample data for infractions table
 INSERT INTO infractions (file_id, infraction_type, details, infraction_date)
 VALUES
@@ -56,6 +80,21 @@ VALUES
 (3, 'documentation_issue', 'Expired safety certificates', '2023-06-15'),
 (4, 'custom', 'Insufficient life saving equipment for passenger capacity', '2023-09-05'),
 (5, 'physical_dmg', 'Corrosion on port side hull plating', '2023-04-18');
+
+-- Additional infractions for ships 6-13
+INSERT INTO infractions (file_id, infraction_type, details, infraction_date)
+VALUES
+(6, 'documentation_issue', 'Incomplete cargo manifest documentation', '2023-03-15'),
+(7, 'physical_dmg', 'Damaged cargo hold bulkheads requiring repair', '2023-04-22'),
+(8, 'documentation_issue', 'Outdated cybersecurity compliance certificates', '2023-07-30'),
+(8, 'custom', 'Unauthorized software on navigation systems', '2023-08-02'),
+(9, 'physical_dmg', 'Malfunctioning emergency communication equipment', '2023-06-18'),
+(10, 'documentation_issue', 'Missing crew certification for hazardous materials handling', '2023-07-05'),
+(11, 'custom', 'Inconsistencies in cargo weight declarations', '2023-05-12'),
+(11, 'documentation_issue', 'Expired international safety management certificate', '2023-06-28'),
+(12, 'physical_dmg', 'Defective fire suppression system in engine room', '2023-03-09'),
+(13, 'physical_dmg', 'Structural issues in engine mounting system', '2023-08-15'),
+(13, 'custom', 'Non-compliant fuel mixture used in auxiliary engines', '2023-08-17');
 
 -- Sample data for harbor_history table
 INSERT INTO harbor_history (file_id, port_visited, country, arrival_date, departure_date, is_high_risk, risk_reason)
@@ -68,4 +107,20 @@ VALUES
 (4, 'Port of Barcelona', 'Spain', '2023-08-15', '2023-08-18', FALSE, NULL),
 (4, 'Port of Marseille', 'France', '2023-08-20', '2023-08-23', FALSE, NULL),
 (5, 'Gdansk Port', 'Poland', '2023-03-10', '2023-03-15', FALSE, NULL),
-(5, 'Stockholm Port', 'Sweden', '2023-03-18', '2023-03-22', FALSE, NULL);
+(5, 'Stockholm Port', 'Sweden', '2023-03-18', '2023-03-22', FALSE, NULL),
+(6, 'Port of Yokohama', 'Japan', '2023-02-15', '2023-02-20', FALSE, NULL),
+(6, 'Busan Port', 'South Korea', '2023-02-25', '2023-03-01', FALSE, NULL),
+(7, 'Port of Naples', 'Italy', '2023-01-10', '2023-01-15', FALSE, NULL),
+(7, 'Port of Piraeus', 'Greece', '2023-01-20', '2023-01-25', FALSE, NULL),
+(8, 'Port of Valencia', 'Spain', '2023-07-05', '2023-07-10', TRUE, NULL),
+(8, 'Port of Algeciras', 'Spain', '2023-07-15', '2023-07-20', TRUE, NULL),
+(9, 'Port of Hamburg', 'Germany', '2023-05-12', '2023-05-18', FALSE, NULL),
+(9, 'Port of Antwerp', 'Belgium', '2023-05-22', '2023-05-28', FALSE, NULL),
+(10, 'Port of New York', 'United States', '2023-06-10', '2023-06-16', FALSE, NULL),
+(10, 'Port of Miami', 'United States', '2023-06-20', '2023-06-26', FALSE, NULL),
+(11, 'Port of Santos', 'Brazil', '2023-04-05', '2023-04-12', TRUE, NULL),
+(11, 'Port of Buenos Aires', 'Argentina', '2023-04-18', '2023-04-25', TRUE, NULL),
+(12, 'Port of Dubai', 'UAE', '2023-02-08', '2023-02-14', FALSE, NULL),
+(12, 'Port of Mumbai', 'India', '2023-02-20', '2023-02-26', FALSE, NULL),
+(13, 'Port of Cape Town', 'South Africa', '2023-07-01', '2023-07-08', TRUE, NULL),
+(13, 'Port of Durban', 'South Africa', '2023-07-15', '2023-07-22', TRUE, NULL);
